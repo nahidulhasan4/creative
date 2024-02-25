@@ -305,7 +305,7 @@ margin-bottom: 20px;
     margin-bottom: 19px;
 }
 .card_Img2{
-    background-image: url('./images/Portfolio\ 6.png');
+    background-image: url('../images/Portfolio\ 6.png');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -315,7 +315,7 @@ margin-bottom: 20px;
     margin-bottom: 19px;
 }
 .card_Img3{
-    background-image: url('./images/Portfolio\ 2.png');
+    background-image: url('../images/Portfolio\ 2.png');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
