@@ -89,6 +89,7 @@ body{
 /* -================here start sercies section design ============== */
 #services{
  margin-top: 83px;
+ margin-bottom: 100px;
 }
 .services_headingBox{
   text-align: center;
@@ -96,8 +97,7 @@ body{
 
 .services__title{
     font-size: 40px;
-    font-weight: 600;
-    max-width: 254px;
+    font-weight: 700;
     margin: 0 auto;
 
 }
@@ -111,7 +111,6 @@ body{
 }
 
 
-/* -================here end sercies section design ============== */
 .card__box{
     display: flex;
 }
@@ -124,7 +123,6 @@ body{
     border-radius: 10px;
 }
 .card:hover{
-    box-shadow:  1px 1px 1px 1px #888888;
     box-shadow:  1px 1px 1px 1px #888888;
     border: 1px solid #888888 ;
 }
@@ -151,28 +149,217 @@ max-height: 71px;
 transition: 0.4s;
 }
 
+/* -================here end servies section design ============== */
+/* -================here dtsrt protfolio section design ============== */
+#protfilo{
+    margin-bottom: 100px;
 
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 576px) and (max-width: 768px) {
-    .benner_heading{
-        max-width: 300px;
-        line-height: 40px;
-        font-size: 38px;
-    }
-    .benner_info{
-        line-height: 25px;
-        font-weight: 400;
-        max-width: 342px;
-    
-    }
 }
+.profolio__card{
+    position: relative;
+    border-radius: 10px;
+    max-width: 270px;
+    max-height: 320px;
+    gap: 10px;
+    
+}
+
+.protfolio_overly_title{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    color: white;
+
+}
+.protfolio_link{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+
+.protfolio_card_overly{
+    width: 230px;
+    height: 0;
+    position: absolute;
+    bottom: 20px;
+    left: 54%;
+    opacity: 0;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    padding: 25px 40px;
+    background-color: var(--paimaryColor);
+    color: white;
+    transition: 0.4s;
+}
+.profolio__card:hover .protfolio_card_overly{
+    opacity: 1;
+    height: 113px;
+}
+
+
+
+/* -================here end rpotfolio  section design ============== */
+/* -================here start team member  section design ============== */
+
+
+
+#team{
+    margin-bottom: 100px;
+}
+.team_card{
+   
+
+}
+.team_imgBox{
+    position: relative;
+    max-width: 370px;
+    max-height: 444px;
+}
+.team-mainImg{
+  
+}
+.team_coverImg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateX(0);
+    max-width: 370px;
+    max-height: 444px;
+    transition: 0.4s;
+}
+.team_imgBox:hover .team_coverImg{
+    opacity: 1;
+}
+.team_imgBox:hover .team_textbox{
+    opacity: 1;
+    max-height: 154px;
+} 
+.team_textbox {
+    position: absolute;
+    opacity: 0;
+    bottom: 24px;
+    left: 50% ;
+    z-index: 1;
+    transition: 0.4s;
+    text-align: center;
+    color: wheat;
+    transform: translateX(-50%);
+}
+
+
+/* -================here end team member  section design ============== */
+#review{
+    margin-bottom: 100px;
+}
+
+.review_Section_title{
+font-size: 40px;
+font-weight: bold;
+line-height: auto;
+max-width: 605px;
+margin-bottom: 20px;
+}
+.review_card{
+    position: relative;
+    max-width: 360px;
+    max-height: 415px;
+    padding: 48px;
+    border-radius: 10px ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.review_section_info{
+ max-width: 542px;
+ font-size: 16px;
+ line-height: 27px;
+ font-weight: 400;
+ color: #181818;
+ margin-bottom: 50px;
+
+}
+.review_icon{
+    display: inline-block;
+    color: #FBBF25;
+}
+.review_cardinfo{
+    max-width: 274px;
+}
+.review_lastIcon{
+    font-size: 50px;
+    color: rgba(89, 86, 232, 0.102);
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+}
+/* ===========here end the review section============= */
+
+#news{
+    margin-bottom: 100px;
+}
+.news_card{
+    border: 1px solid #E3E3E3;
+    padding: 19px 12px;
+    border-radius: 10px;
+}
+.newsCard_img{
+    border-radius: 10px;
+    max-width: 332px;
+    max-height: 198px;
+    margin-bottom: 19px;
+}
+.card_Img2{
+    background-image: url('/images/Portfolio\ 6.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    max-width: 332px;
+    display: block;
+    height: 198px;
+    margin-bottom: 19px;
+}
+.card_Img3{
+    background-image: url('/images/Portfolio\ 2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    max-width: 332px;
+    display: block;
+    height: 198px;
+    margin-bottom: 19px;
+}
+.Ncard_title{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: auto;
+    max-width: 270px;
+}
+
+.newsReporter{
+    margin-right: 30px;
+    color: #5D5D5D;
+    font-size: 16px;
+}
+/* ===============here  end the news section============ */
+/* ===============here  start  the footer section============ */
+
+.footer{
+        margin-bottom: 100px;
+        padding: 100px 100px;
+    }
+.fa-facebook{
+    font-size: 30px;
+    background-color: #5956E8;
+    color: white;
+    border-radius: 25px;
+
+}
+.fa-twitter{
+    font-size: 30px;
+    background-color: white;
+    color: #5956E8;
+    border-radius: 25px;
+
+}
+/* ===============here  end  the footer section============ */
